@@ -129,13 +129,13 @@ nav button{
     color: var(--text-color);
     border: none;
     min-width: 50vh;
+    font-size: 1.5rem;
     border-bottom: 2px solid var(--main-color);
     margin-bottom: 10px;
 }
 #add-item-input:focus{
     outline: none;
     caret-color: var(--text-color);
-    font-size: 1.5rem;
     background-color: var(--sub-color) 50%;
 }
 #cancle-this-item{
@@ -235,6 +235,7 @@ nav button:disabled:hover{
 
 #day-settings h4{
     margin-left: 40px;
+    margin-right: 40px;
 }
 #theme-settings h4{
     margin-left: 40px;
@@ -245,7 +246,6 @@ nav button:disabled:hover{
     align-items: center;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin: 0 50px;
     list-style: none;
 }
 #day-type li{
@@ -260,16 +260,18 @@ nav button:disabled:hover{
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    margin: 0 50px;
     list-style: none;
+
 }
 #themes li{
     width: 100%;
+    height: 90%;
     text-align: center;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
     cursor: pointer;
-    max-width: 50vh;
-    margin: 1vh 3vh;
+    /* max-width: 50vh; */
     color: var(--text-color);
     background-color: var(--bg-color);
     border: 1px solid var(--text-color);
@@ -291,4 +293,3 @@ nav button:disabled:hover{
     justify-content: center;
     align-items: center;
 }
-
