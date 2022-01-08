@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelog</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themes.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body onkeypress="handleEnter(event)">
+    <nav>
+        <button id="day-move-past" onclick="moveDay('left')" disabled='true'><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <span id="nav-day"> Today </span>
+        <button id="day-move-future" onclick="moveDay('right')"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </nav>
+    <main>
+        <!--this adds items to the list-->
+        <div id="add-item" >
+            <h2>Add items</h2>
+            <input type="text" id="add-item-input" onkeypress="handleEnterAdd(event)" placeholder="" tabindex="0" ><br>
+            <span id="add-this-item" onclick="addItem()" tabindex="0">Add</span>
+            <span id="cancle-this-item" onclick="hideAdderPopup()" tabindex="0">Cancle</span>
+    
+        </div>
+        <div id="underWrap" ></div>
+        <div id="action-bar">
+            <ul>
+                <li id="add-button" onclick="showAdderPopup()" tabindex="0"><i class="fa fa-plus" aria-hidden="true"></i> Add</li>
+                <li id="empty-button"></li>
+                <li><ul>
+                <li id="trash-button" onclick="toggleTrash()" tabindex="0"><i class="fa fa-trash" aria-hidden="true"></i></li>
+                <li id="settings-button" onclick="showSettings()" tabindex="0"><i class="fa fa-cog" aria-hidden="true"></i></li>
+            </ul></li>
+            </ul>
+        </div>
+
+        <div id="items">
+            <ul id="item-ul-unchecked">
+
+            </ul>
+            <ul id="item-ul-checked">
+
+            </ul>
+        </div>
+        
+        <div id="settings-panel">
+            <h2>Settings</h2>
+            <div id="close-settings">
+               <i class="fa fa-times" aria-hidden="true" tabindex="0" onclick="hideSettings()"></i>
+            </div>
+
+            <div id="day-settings">
+                <h4>Day type</h4>
+                <ul id="day-type">
+                    <li id="day-type-rel" class="active" onclick="setDayRel()">Relative</li>
+                    <li id="day-type-abs" onclick="setDayAbs()">Absolute</li>
+                </ul>
+            </div>
+
+            <div id="theme-settings">
+                <h4>Themes</h4>
+                <ul id="themes">
+                    
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <script src="database.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

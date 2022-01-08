@@ -1,0 +1,102 @@
+/* copy pasted directly from monkeytype.com */
+.iceberg-dark{
+    --bg-color: #161821;
+    --main-color: #84a0c6;
+    --sub-color: #141d26;
+    --sub-sub-color: #414347;
+    --text-color: #c6c8d1;
+    --error-color: #e27878;
+    --error-extra-color: #e2a478;
+}
+.vscode{
+    --bg-color: #1e1e1e;
+    --main-color: #007acc;
+    --caret-color: #569cd6;
+    --sub-color: #4d4d4d;
+    --sub-sub-color: #4d4d4d;
+    --text-color: #d4d4d4;
+    --error-color: #f44747;
+    --error-extra-color: #f44747;
+}
+.dark{
+    --bg-color: #111;
+    --main-color: #eee;
+    --sub-color: #444;
+    --sub-sub-color: #444;
+    --text-color: #eee;
+    --error-color: #da3333;
+    --error-extra-color: #791717;
+}
+.shadow{
+    --bg-color: #000;
+    --main-color: #eee;
+    --sub-color: #444;
+    --sub-sub-color: #b1b1b1;
+    --text-color: #eee;
+    --error-color: #fff;
+    --error-extra-color: #d8d8d8;
+}
+.arch{
+    --bg-color: #0c0d11;
+    --main-color: #7ebab5;
+    --sub-sub-color: #7ebab5;
+    --sub-color: #454864;
+    --text-color: #f6f5f5;
+    --error-color: #ff4754;
+    --error-extra-color: #b02a33;
+}
+.moonlight{
+    --bg-color: #1f2730;
+    --main-color: #c69f68;
+    --sub-sub-color: #8f744b;
+    --sub-color: #4b5975;
+    --text-color: #ccccb5;
+    --error-color: #b81b2c;
+    --error-extra-color: #84131f;
+}
+.cafe{
+    --bg-color: #ceb18d;
+    --main-color: #14120f;
+    --sub-color: #d4d2d1;
+    --sub-sub-color: #bd9a6f;
+    --text-color: #14120f;
+    --error-color: #c82931;
+    --error-extra-color: #ac1823;
+}
+.repose{
+    --bg-color: #EFEAD0;
+    --main-color: #5F605E;
+    --sub-sub-color: #6f706e;
+    --sub-color: #8F8E84;
+    --text-color: #333538;
+    --error-color: #C43C53;
+    --error-extra-color: #A52632;
+}
+.paper{
+    --bg-color: #eeeeee;
+    --main-color: #444444;
+    --sub-sub-color: #555555;
+    --sub-color: #b2b2b2;
+    --text-color: #444444;
+    --error-color: #d70000;
+    --error-extra-color: #d70000;
+}
+
+.milkshake{
+    --bg-color: #ffffff;
+    --main-color: #212b43;
+    --sub-sub-color: #2b3958;
+    --sub-color: #62cfe6;
+    --text-color: #212b43;
+    --error-color: #f19dac;
+    --error-extra-color: #e58c9d;
+}
+.iceberg-light{
+    --bg-color: #e8e9ec;
+    --sub-sub-color: #92a4be;;
+    --main-color: #2d539e;
+    --sub-color: #adb1c4;
+    --text-color: #33374c;
+    --error-color: #cc517a;
+    --error-extra-color: #cc3768;
+}
